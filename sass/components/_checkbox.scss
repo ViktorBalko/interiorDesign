@@ -1,0 +1,41 @@
+.modal__checkbox {
+  position: relative;
+  display: inline-block;
+  left: 0px;
+  top: 0px;
+  width: 16px;
+  height: 16px;
+}
+
+.modal__check-on {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+.modal__check-on:checked {
+  position: absolute;
+  z-index: 50;
+  display: inline-block;
+  left: 0px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/check.svg);
+  background-origin: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.modal__check-off {
+  position: relative;
+  display: inline-block;
+  left: 0px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/checkbox.svg);
+  background-size: contain;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}

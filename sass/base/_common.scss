@@ -1,0 +1,32 @@
+:root {
+  --mainBackgroundColor: #d3cbc5;
+}
+.body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text-color);
+  background-color: var(--white-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  // max-width: 100%;
+  // height: auto;
+}
