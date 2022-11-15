@@ -1,14 +1,17 @@
 .interiorBody {
-  font-family: "House of Montague", sans-serif;
+  //   font-family: "House of Montague", sans-serif;
+  //   font-family: "TT Firs Neue Trl", sans-serif;
+  font-family: "NestoBeryl42", sans-serif;
+  font-weight: 100;
 }
 .interiorHeader {
   display: flex;
   height: 80px;
   width: 1440px;
   background-color: var(--mainBackgroundColor);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+  border-bottom: 1px solid rgba(66, 1, 1, 0.096);
   box-shadow: black;
-  padding-left: 165px;
+  //   padding-left: 165px;
   margin: 0%;
 }
 
@@ -21,6 +24,7 @@
 }
 .interiorHeader_logo {
   padding-top: 13px;
+  padding-left: 100px;
 }
 
 .interiorHeader_navigatePanel {
@@ -32,13 +36,20 @@
   align-items: center;
   text-align: center;
   padding-top: 14px;
-  padding-left: 115px;
+  padding-left: 60px;
   //   border-bottom: 2px solid rgb(87, 3, 3);
   border-bottom-left-radius: 34px;
 }
 .interiorHeader_navigateLinkTitle {
   font-family: "TT Firs Neue Trl", sans-serif;
+  //   font-family: "NestoBeryl42", sans-serif;
   font-weight: 400;
+  color: #790303;
+  transition: 1s;
+}
+.interiorHeader_navigateLink:hover .interiorHeader_navigateLinkTitle {
+  color: rgba(1, 48, 48, 0.808);
+  transition: 1s;
 }
 // .linteriorHeaderLogoLink {
 //   display: block;
@@ -47,48 +58,30 @@
 //   margin: 0;
 //   background-color: chocolate;
 // }
-.interiorHero {
-  display: block;
-  height: 900px;
-  width: 1440px;
-  margin: 0;
-  //   background-color: brown;
-  background-image: url(/images/maxyPic/interiorHeroBanner.png);
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-}
 
-.interiorHero_frame {
-  //   display: block;
-  //   width: 200px;
-  //   height: 200px;
+.collectionGallery_caruselCellButton {
   position: relative;
-}
-.interiorHero_frameHorizontal {
-  position: absolute;
   display: block;
-  width: 350px;
-  height: 350px;
-  top: 140px;
-  left: 150px;
+  width: 190px;
+  height: 50px;
+  transition: 1s;
+  left: 0px;
+  top: 0px;
+  border: none;
   background-color: transparent;
-
-  border-top: 2px solid rgb(121, 3, 3);
-  border-radius: 15px;
 }
 
-.interiorHero_frameVertical {
-  position: absolute;
-  display: block;
-  width: 350px;
-  height: 350px;
-  top: 110px;
-  left: 170px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 34px;
-  //   background-color: rgba(64, 224, 208, 0.267);
-  border-left: 2px solid rgb(121, 3, 3);
+.collectionGallery_caruselCellButton:hover
+  .collectionGallery_caruselCellButtonText {
+  //   color: rgb(184, 4, 4);
+  color: rgba(1, 48, 48, 0.808);
+  transition: 1s;
+}
+
+.collectionGallery_caruselCellButton:hover .span3 {
+  transition: 1s;
+  background-color: #03447921;
+  //   overflow: hidden;
 }
 .interiorHero_button {
   position: relative;
@@ -96,31 +89,36 @@
   width: 190px;
   height: 50px;
   transition: 1s;
-  left: 390px;
-  top: 33px;
+  left: 190px;
+  top: 50px;
   border: none;
   background-color: transparent;
 }
+.collectionGallery_caruselCellButtonText {
+  font-family: "TT Firs Neue Trl", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #790303;
+  transition: 1s;
+}
 
 .interiorHero_buttonText {
-  //   font-family: "House of Montague", sans-serif;
-  //   font-family: "MontrealSerial", sans-serif;
   font-family: "TT Firs Neue Trl", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   color: #790303;
   transition: 1s;
 }
 
 .interiorHero_button:hover .interiorHero_buttonText {
-  color: rgb(184, 4, 4);
-
+  //   color: rgb(184, 4, 4);
+  color: rgba(1, 48, 48, 0.808);
   transition: 1s;
 }
 
 .interiorHero_button:hover .span3 {
   transition: 1s;
-  background-color: #79030321;
+  background-color: #03447921;
   //   overflow: hidden;
 }
 
@@ -151,7 +149,7 @@
   height: 40px;
   border-bottom: 1px solid black;
   border-left: 1px solid black;
-  border-radius: 3px;
+  //   border-radius: 3px;
   overflow: hidden;
   z-index: 9;
   transition: 1s;
@@ -163,7 +161,7 @@
   display: block;
   width: 180px;
   height: 40px;
-  border-radius: 3px;
+  //   border-radius: 3px;
 
   /* background-color: rgba(11, 129, 184, 0.288); */
   border-top: 1px solid black;
@@ -189,6 +187,8 @@
 .collectionGallery_carusel {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .collectionGallery_caruselPic {
   position: absolute;
@@ -201,8 +201,15 @@
   width: 350px;
   height: 449px;
   border: 1px solid black;
+  background-color: #e6e6e6;
 }
 
+.collectionGallery_caruselCellTitle {
+  padding-left: 12px;
+}
+.collectionGallery_caruselCellButton {
+  margin-left: 24px;
+}
 .professionalTeam_gallery {
   display: grid;
   //  display: grid;
@@ -210,114 +217,122 @@
   grid-column-gap: 30px;
 }
 
-.peopleSay {
-  display: block;
-  height: 700px;
-  background-image: url(/images/maxyPic/peopleSayPic.png);
-  background-size: contain;
-  background-position: top;
-  background-repeat: no-repeat;
-}
-
-.peopleSay_title {
-  //   font-family: "Leo Arrow", sans-serif;
-  padding-bottom: 40px;
-  display: flex;
-  width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 0px;
-  font-size: 58px;
-  margin-top: 0;
-  justify-content: center;
-}
-
-.peopleSay_subtitle {
-  padding-bottom: 40px;
-  display: flex;
-  width: 500px;
-  padding-top: 69px;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.peopleSay_clientsGallery {
-  display: flex;
-  margin-top: 65px;
-  justify-content: space-evenly;
-}
-.peopleSay_clientsGalleryCard {
-  position: relative;
+.professionalTeam_galleryCell {
   display: block;
   width: 255px;
-  height: 314px;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid black;
-  border-radius: 9px;
-  padding-left: 11px;
-  padding-right: 20px;
+  height: 274px;
+  background-color: red;
+  padding-bottom: 40px;
 }
 
-.peopleSay_clientsGalleryPlace {
+.professionalTeam_galleryCellPic {
   position: absolute;
-  top: -55px;
-  right: 39px;
-  display: block;
-  width: 111px;
-  height: 111px;
-  border-radius: 50%;
-  background-color: #d9d9d9;
+  width: 103px;
+  height: 146px;
 }
-.peopleSay_clientsGalleryPic {
-  position: absolute;
-  bottom: 2px;
-
-  display: block;
-  width: 111px;
-  height: 96px;
-}
-
-// .peopleSay_subtitle::before {
-//   display: block;
-//   width: 50px;
-//   height: 4px;
-//   background-color: darkred;
-// }
-.peopleSay_clientsGalleryTitle {
-  display: block;
-  width: 90px;
-  padding-top: 30px;
-  color: rgb(0, 0, 0);
-}
-
-.peopleSay_before,
-.peopleSay_after {
-  display: block;
-  width: 50px;
-  height: 2px;
-  background-color: rgb(184, 4, 4);
-}
-.peopleSay_before {
-  margin-right: 15px;
-  margin-top: 7px;
-}
-.peopleSay_after {
-  margin-left: 15px;
-  margin-top: 7px;
-}
-// .peopleSay_clientsGalleryTitle {
-
-// }
 
 // .peopleSay {
+//   display: block;
+//   height: 700px;
+//   background-image: url(/images/maxyPic/peopleSayPic.png);
+//   background-size: contain;
+//   background-position: top;
+//   background-repeat: no-repeat;
+// }
+
+// .peopleSay_title {
+//   //   font-family: "Leo Arrow", sans-serif;
+//   padding-bottom: 40px;
+//   display: flex;
+//   width: 800px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-top: 0px;
+//   font-size: 58px;
+//   margin-top: 0;
 //   justify-content: center;
 // }
-.peopleSay_clientsGallerySubtitle {
-  color: darkred;
-}
 
-.professionalTeam_navigate {
-  display: flex;
-  justify-content: space-evenly;
-}
+// .peopleSay_subtitle {
+//   padding-bottom: 40px;
+//   display: flex;
+//   width: 500px;
+//   padding-top: 69px;
+//   justify-content: center;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+// .peopleSay_clientsGallery {
+//   display: flex;
+//   margin-top: 65px;
+//   justify-content: space-evenly;
+// }
+// .peopleSay_clientsGalleryCard {
+//   position: relative;
+//   display: block;
+//   width: 255px;
+//   height: 314px;
+//   background-color: rgb(255, 255, 255);
+//   border: 1px solid black;
+//   border-radius: 9px;
+//   padding-left: 11px;
+//   padding-right: 20px;
+// }
+
+// .peopleSay_clientsGalleryPlace {
+//   position: absolute;
+//   top: -55px;
+//   right: 39px;
+//   display: block;
+//   width: 111px;
+//   height: 111px;
+//   border-radius: 50%;
+//   background-color: #d9d9d9;
+// }
+// .peopleSay_clientsGalleryPic {
+//   position: absolute;
+//   bottom: 2px;
+
+//   display: block;
+//   width: 111px;
+//   height: 96px;
+// }
+
+// .peopleSay_clientsGalleryTitle {
+//   display: block;
+//   width: 90px;
+//   padding-top: 30px;
+//   color: rgb(0, 0, 0);
+// }
+
+// .peopleSay_before,
+// .peopleSay_after {
+//   display: block;
+//   width: 50px;
+//   height: 2px;
+//   background-color: rgb(184, 4, 4);
+// }
+// .peopleSay_before {
+//   margin-right: 15px;
+//   margin-top: 7px;
+// }
+// .peopleSay_after {
+//   margin-left: 15px;
+//   margin-top: 7px;
+// }
+// // .peopleSay_clientsGalleryTitle {
+
+// // }
+
+// // .peopleSay {
+// //   justify-content: center;
+// // }
+// .peopleSay_clientsGallerySubtitle {
+//   color: darkred;
+// }
+
+// .professionalTeam_navigate {
+//   display: flex;
+//   justify-content: space-evenly;
+// }
